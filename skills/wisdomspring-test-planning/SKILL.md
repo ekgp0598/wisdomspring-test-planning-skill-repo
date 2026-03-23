@@ -35,8 +35,9 @@ Always read these first:
 Read these only when needed:
 
 - `references/test-areas.md` for coverage planning
-- `references/admin-policy-summary.md` when the request touches admin, scheduling, open states, content visibility, or edit/delete rules
+- `references/admin-policy-summary.md` when the request touches admin, scheduling, open states, content visibility, or edit-delete rules
 - `references/report-template.md` when you need to return a structured QA artifact
+- `references/expected-results.md` when you need richer expected-result patterns
 - `references/example-prompts.md` when you need ready-to-copy usage examples for end users
 
 Then load only the matching local artifacts for the scoped area:
@@ -64,8 +65,16 @@ Write each case with:
 - objective
 - preconditions
 - steps
-- expected result
+- expected result bundle
 - priority
+
+Do not collapse the expected result into a single sentence unless the flow is trivial. By default, structure the expected result bundle with these lenses:
+
+- 정상 결과: expected success outcome
+- 예외 결과: blocked or rejected outcome when preconditions are missing or invalid
+- 상태 변화: UI, CTA, count, badge, route, modal, or visibility changes after the action
+- 데이터 반영: whether submitted, edited, deleted, hidden, or scheduled data is reflected correctly
+- 플랫폼 차이: web and mobile differences when both exist
 
 When requirements are incomplete, mark the gap explicitly as `spec gap` instead of silently inventing behavior.
 
@@ -78,6 +87,8 @@ When actually testing, record:
 - evidence path or screenshot reference
 - suspected cause if inferable
 - whether the issue is reproducible
+
+When a test case contains multiple expected-result branches, log which branch was exercised and which branches remain unverified.
 
 Separate findings into:
 
@@ -96,6 +107,23 @@ Default output order:
 5. next recommended checks
 
 Use concise Korean that a planner, designer, developer, or QA can all read quickly.
+
+## Expected Result Rule
+
+Default to richer expected results. Prefer this format when the user asks for test cases:
+
+- `정상`: expected success path
+- `예외`: invalid input, empty data, locked state, permission denial, or missing membership handling
+- `상태변화`: button label, toast, badge, count, route, modal, or visibility changes
+- `플랫폼`: mobile-web behavior differences
+
+If the flow has admin dependencies, also include:
+
+- `정책 연동`: scheduled open, duplicate-date restriction, edit-delete lock, hidden-delete distinction
+
+If the flow has user-state dependencies, also include:
+
+- `사용자 상태별`: logged-in or logged-out, subscribed or unsubscribed, own content or others' content
 
 ## Prompt Examples
 
@@ -116,7 +144,7 @@ Always call out web and mobile differences when both artifacts exist.
 
 ## Working Rules
 
-- Prefer existing local WisdomSpring artifacts over generic QA theory.
+- Prefer bundled WisdomSpring artifacts over generic QA theory.
 - Use file names and screen IDs exactly as written in the artifacts.
 - State assumptions when environment access, test accounts, or payment conditions are unknown.
 - If you cannot run the service, still return a document-based test plan and risk list.

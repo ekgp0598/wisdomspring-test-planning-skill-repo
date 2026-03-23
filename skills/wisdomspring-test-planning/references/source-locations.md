@@ -10,6 +10,7 @@ Use these bundled references as the primary knowledge base for WisdomSpring test
 - `references/admin-policy-summary.md`: admin-driven business rules
 - `references/service-overview.md`: service context
 - `references/report-template.md`: reusable QA output format
+- `references/expected-results.md`: richer expected-result patterns
 
 ## How to find scoped artifacts
 
