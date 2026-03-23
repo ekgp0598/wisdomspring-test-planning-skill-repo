@@ -2,6 +2,8 @@
 
 Use this file when testing WisdomSpring behavior that depends on admin configuration or lifecycle rules.
 
+For admin list columns, detail fields, registration flow, edit or delete locks, and field-level constraints, also read `admin-planning-spec.md`.
+
 ## Theme management
 
 - Expose themes on the front by open date.

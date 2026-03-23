@@ -8,6 +8,7 @@ Use these bundled references as the primary knowledge base for WisdomSpring test
 - `references/screen-index.md`: lookup table from screen ID to bundled markdown file
 - `references/screen-plans/*.md`: detailed screen rules and flow notes
 - `references/admin-policy-summary.md`: admin-driven business rules
+- `references/admin-planning-spec.md`: detailed admin list, field, flow, and constraint spec
 - `references/service-overview.md`: service context
 - `references/report-template.md`: reusable QA output format
 - `references/expected-results.md`: richer expected-result patterns
@@ -35,13 +36,15 @@ If the user gives only a product area, map it this way:
 - `ia-map.md`: hierarchy, page or layer type, mobile-web mapping
 - `screen-index.md`: quick routing to the correct bundled screen file
 - `screen-plans/*.md`: behavior rules, transitions, notes, TBD items
-- `admin-policy-summary.md`: validation source for scheduled open, visibility, edit-delete constraints, and duplicate restrictions
+- `admin-policy-summary.md`: quick validation source for scheduled open, visibility, edit-delete constraints, and duplicate restrictions
+- `admin-planning-spec.md`: detailed validation source for admin list columns, detail fields, registration rules, filters, and management flows
 
 ## Loading order
 
 1. Read `ia-map.md` and `screen-index.md` to identify the target flow.
 2. Read the matching bundled markdown screen definition.
-3. Read `admin-policy-summary.md` only when the flow depends on open date, visibility, edit-delete, membership state, or content constraints.
-4. Ask for screenshots or runtime evidence only if visual verification matters and the bundled text is insufficient.
+3. Read `admin-policy-summary.md` first when the flow depends on open date, visibility, edit-delete, membership state, or content constraints.
+4. Read `admin-planning-spec.md` when the user asks about admin list or detail spec, registration or modal flow, field-level constraints, answer record management, or content note management.
+5. Ask for screenshots or runtime evidence only if visual verification matters and the bundled text is insufficient.
 
 Do not load unrelated screen files just because they sit in the same area.
