@@ -1,23 +1,23 @@
-# WisdomSpring Test Planning Skill
+# WisdomSpring Service Reference Skill
 
-Portable Codex skill for planning and executing QA on the WisdomSpring service.
+Portable Codex skill for WisdomSpring service reference, policy lookup, design walkthroughs, and QA planning.
 
 ## Included path
 
-- `skills/wisdomspring-test-planning`
+- `skills/wisdomspring-service-reference`
 
 ## Install with Codex
 
 After this repo is pushed to GitHub, install it with:
 
 ```powershell
-python "$env:USERPROFILE\.codex\skills\.system\skill-installer\scripts\install-skill-from-github.py" --repo ekgp0598/wisdomspring-test-planning-skill-repo --path skills/wisdomspring-test-planning
+python "$env:USERPROFILE\.codex\skills\.system\skill-installer\scripts\install-skill-from-github.py" --repo ekgp0598/wisdomspring-test-planning-skill-repo --path skills/wisdomspring-service-reference
 ```
 
 Then restart Codex and use:
 
 ```text
-$wisdomspring-test-planning Create QA test cases for HM-001
+$wisdomspring-service-reference Create QA test cases for HM-001
 ```
 
 ## Notes

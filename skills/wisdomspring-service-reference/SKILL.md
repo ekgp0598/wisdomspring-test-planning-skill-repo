@@ -1,9 +1,9 @@
 ---
-name: wisdomspring-test-planning
-description: Plan and execute manual testing for the WisdomSpring service using bundled IA maps, bundled screen-planning markdown, and bundled policy notes. Use when Codex needs to create a test plan, derive test scenarios, run QA for WisdomSpring web or mobile or admin flows, summarize defects, or produce a Korean QA report for WisdomSpring without relying on a specific user's local folders.
+name: wisdomspring-service-reference
+description: Use when Codex needs a bundled reference for the WisdomSpring service, including service overview, screen plans, bundled design images, admin policies, and QA guidance. Supports service explanation, policy comparison, screen structure walkthroughs, test strategy writing, scenario design, and Korean QA reporting without relying on a specific user's local folders.
 ---
 
-# WisdomSpring Test Planning
+# WisdomSpring Service Reference
 
 ## Overview
 

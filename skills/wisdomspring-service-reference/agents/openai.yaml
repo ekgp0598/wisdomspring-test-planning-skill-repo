@@ -1,0 +1,4 @@
+interface:
+  display_name: "WisdomSpring Service Reference"
+  short_description: "Reference WisdomSpring service, policy, design, and QA"
+  default_prompt: "Explain or test the WisdomSpring service using the bundled IA map, screen plans, design images, and policy documents."
