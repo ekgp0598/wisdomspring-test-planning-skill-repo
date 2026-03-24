@@ -1,20 +1,22 @@
 # Design Image Index
 
-Use this file when you need to connect a feature area to the bundled WisdomSpring design images.
+Use this file to connect a feature area or screen family to the bundled WisdomSpring design images.
 
-All image files below are now packaged inside this skill:
-
-- `references/design-images/`
+All image files below are packaged inside this skill under `references/design-images/`.
 
 ## Bundle summary
 
-- Total bundled image files: `71`
-- Total bundled size: about `16.56 MB`
+- Total bundled image files: `78`
+- Newly added image families:
+  - membership introduction and trial offer
+  - membership signup lifecycle emails
+  - refreshed screen variants from the latest source folder
 - Supported usage:
   - explain what a screen looks like
   - map a screen ID to bundled visual references
   - compare mobile and web layouts
   - support visual QA without relying on one user's local folders
+  - explain image-only assets even when no paired markdown screen plan exists yet
 
 ## Home and discover
 
@@ -56,6 +58,15 @@ All image files below are now packaged inside this skill:
 - `M-CS-030_FAQ.png`
 - `W-CS-030_FAQ.png`
 
+## Membership promotion and onboarding
+
+- `M-CS-010-_멤버십소개.png`
+- `W-CS-010_멤버십소개.png`
+- `M-CS-011_멤버십 1개월 체험권.png`
+- `W-CS-011-_멤버십 1개월 체험권.png`
+
+These assets are currently image-only references and may not yet have paired markdown screen plans.
+
 ## Profile and records
 
 - `M-PR-120 프로필_생각기록.png`
@@ -69,7 +80,9 @@ All image files below are now packaged inside this skill:
 - `M-PR-122-프로필_댓글.png`
 - `W-PR-122 프로필_댓글.png`
 - `M-PR-140 프로필_팔로우_팔로워.png`
+- `M-PR-140-프로필_팔로우_팔로잉.png`
 - `W-PR-140 프로필_팔로우_팔로워.png`
+- `W-PR-140-프로필_팔로우_팔로잉.png`
 
 ## Membership and billing
 
@@ -80,14 +93,14 @@ All image files below are now packaged inside this skill:
 - `W-PR-310_멤버십 정보_결제 관리o.png`
 - `W-PR-310_멤버십 정보_결제 관리x.png`
 - `M-PR-410_멤버십 정보_구독중.png`
-- `W-PR-410_멤버십 정보_구독중.png`
 - `M-PR-410_멤버십 정보_햔황(해지 예약).png`
-- `W-PR-410_멤버십 정보_햔황(해지 예약).png`
 - `M-PR-410_멤버십 정보_현황(멤버십 X).png`
-- `W-PR-410_멤버십 정보_현황(멤버십 X).png`
 - `M-PR-410_멤버십 정보_현황(사용정지).png`
-- `W-PR-410_멤버십 정보_현황(사용정지).png`
 - `M-PR-410_멤버십 정보_현황(해지 완료).png`
+- `W-PR-410_멤버십 정보_구독중.png`
+- `W-PR-410_멤버십 정보_햔황(해지 예약).png`
+- `W-PR-410_멤버십 정보_현황(멤버십 X).png`
+- `W-PR-410_멤버십 정보_현황(사용정지).png`
 - `W-PR-410-_멤버십 정보_현황(해지 완료).png`
 - `M-PR-421_멤버십 가입.png`
 - `M-PR-421_멤버십 가입-1.png`
@@ -96,20 +109,26 @@ All image files below are now packaged inside this skill:
 - `W-PR-421-_멤버십 가입.png`
 - `W-PR-421_멤버십가입_완료_화면.png`
 
-## Account and settings
+## Membership lifecycle email and settings
 
-- `M-PR-211_회원정보관리_비밀번호 확인.png`
-- `W-PR-211_회원정보관리_ 비밀번호 확인.png`
-- `M-PR-212 - 회원정보관리_ 변경.png`
-- `W-PR-212 - 회원정보관리_ 변경.png`
-- `M-PR-213_회원정보관리_이벤트 혜택 알림.png`
-- `W-PR-213_회원정보관리_이벤트 혜택 알림.png`
+- `W-ST-020 멤버십 가입 환영메일.png`
+- `W-ST-020 멤버십 갱신메일.png`
+- `W-ST-020 멤버십 해지메일.png`
 - `M-ST-010_앱 푸시 설정.png`
+- `M-PR-211_회원정보관리_비밀번호 확인.png`
+- `M-PR-212 - 회원정보관리_ 변경.png`
+- `M-PR-213_회원정보관리_이벤트 혜택 알림.png`
+- `W-PR-211_회원정보관리_ 비밀번호 확인.png`
+- `W-PR-212 - 회원정보관리_ 변경.png`
+- `W-PR-213_회원정보관리_이벤트 혜택 알림.png`
+
+These assets are useful when the user asks about membership lifecycle communication, onboarding flow, or settings-related UI even without a paired markdown spec.
 
 ## Usage rule
 
 - Use this file as the primary locator for bundled visual assets.
 - Use `references/design-images/` when you need the actual bundled image files.
 - Use `visual-design-summary.md` to explain the design language and overall mood.
+- Use `visual-structure-by-area.md` to explain hierarchy, layout, and mobile-web differences.
 - Use `screen-plans/*.md` for behavior rules and interaction logic.
 - Ask the user for runtime screenshots only when the bundled images are insufficient or when the live product may differ from the design source.

@@ -44,6 +44,7 @@ If the user gives only a product area, map it this way:
 - `design-image-index.md`: locator for bundled mobile and web image files
 - `design-images/*`: visual source assets for screen explanation and visual QA support
 - `visual-structure-by-area.md`: detailed screen structure analysis for layout explanation and mobile-web comparison
+- Some bundled images do not yet have paired markdown screen plans. Use them as `image-only references` when the user asks about membership introduction, trial offer, or membership lifecycle email screens.
 
 ## Loading order
 
