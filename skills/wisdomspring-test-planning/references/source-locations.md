@@ -11,6 +11,7 @@ Use these bundled references as the primary knowledge base for WisdomSpring test
 - `references/admin-planning-spec.md`: detailed admin list, field, flow, and constraint spec
 - `references/design-image-index.md`: bundled design-image locator
 - `references/design-images/*`: bundled screen images with screen IDs
+- `references/visual-structure-by-area.md`: detailed visual hierarchy and layout analysis by product area
 - `references/service-overview.md`: service context
 - `references/report-template.md`: reusable QA output format
 - `references/expected-results.md`: richer expected-result patterns
@@ -42,6 +43,7 @@ If the user gives only a product area, map it this way:
 - `admin-planning-spec.md`: detailed validation source for admin list columns, detail fields, registration rules, filters, and management flows
 - `design-image-index.md`: locator for bundled mobile and web image files
 - `design-images/*`: visual source assets for screen explanation and visual QA support
+- `visual-structure-by-area.md`: detailed screen structure analysis for layout explanation and mobile-web comparison
 
 ## Loading order
 
@@ -50,6 +52,7 @@ If the user gives only a product area, map it this way:
 3. Read `admin-policy-summary.md` first when the flow depends on open date, visibility, edit-delete, membership state, or content constraints.
 4. Read `admin-planning-spec.md` when the user asks about admin list or detail spec, registration or modal flow, field-level constraints, answer record management, or content note management.
 5. Read `design-image-index.md` and the matching files under `design-images/` when the user asks what a screen looks like or when visual verification matters.
-6. Ask for screenshots or runtime evidence only if the bundled text and bundled images are insufficient.
+6. Read `visual-structure-by-area.md` when the user asks for layout structure, hierarchy, composition, or design explanation beyond simple mood summary.
+7. Ask for screenshots or runtime evidence only if the bundled text and bundled images are insufficient.
 
 Do not load unrelated screen files just because they sit in the same area.

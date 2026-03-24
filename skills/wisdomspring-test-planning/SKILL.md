@@ -45,6 +45,7 @@ Read these only when needed:
 - `references/expected-results.md` when you need richer expected-result patterns
 - `references/example-prompts.md` when you need ready-to-copy usage examples for end users
 - `references/design-image-index.md` when you need to map a screen or flow to bundled design image files under `references/design-images/`
+- `references/visual-structure-by-area.md` when you need a deeper explanation of screen hierarchy, section composition, or mobile-web structural difference
 
 Then load only the matching local artifacts for the scoped area:
 
@@ -67,6 +68,8 @@ When the user appears unfamiliar with WisdomSpring, answer in this order before 
 6. the membership and admin-policy implications
 
 Use `references/service-primer.md` and `references/visual-design-summary.md` first for this mode.
+
+When the user asks how a screen is laid out or why the design feels the way it does, also read `references/visual-structure-by-area.md`.
 
 ### 2-2. Admin deep-reference mode
 
@@ -180,4 +183,5 @@ Always call out web and mobile differences when both artifacts exist.
 - If artifacts conflict, quote both sources briefly and mark the discrepancy as a spec gap.
 - This skill is packaged to be shareable; prefer bundled references over machine-specific absolute paths.
 - If the user asks what the service looks or feels like, answer from the bundled visual-design summary rather than generic design language.
+- If the user asks for screen structure or layout explanation, combine `visual-design-summary.md`, `visual-structure-by-area.md`, and the matching bundled images instead of answering from memory.
 - If the user asks about admin list structure or management behavior, do not stop at summary rules. Load `admin-planning-spec.md` and answer with the relevant fields, constraints, and flow details.

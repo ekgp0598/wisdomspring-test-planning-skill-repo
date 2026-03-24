@@ -8,6 +8,12 @@ Use these prompts as copy-paste starters when sharing the skill with other peopl
 $wisdomspring-test-planning 위즈덤스프링이 어떤 서비스인지 하나도 모르는 사람에게 설명해줘. 서비스 목적, 주요 사용자 여정, 핵심 화면, 콘텐츠 구조, 멤버십 개념, 화면 분위기까지 한국어로 쉽게 설명해줘.
 ```
 
+## 0-1. 화면 구조 설명
+
+```text
+$wisdomspring-test-planning HM-001, FD-001, PR-410 화면이 디자인 기준으로 어떤 구조인지 설명해줘. 각 화면의 상단 핵심 블록, 중간 리스트/카드 구성, 하단 탐색 영역, 모바일/웹 차이까지 정리해줘.
+```
+
 ## 1. 빠른 스모크 테스트
 
 ```text
