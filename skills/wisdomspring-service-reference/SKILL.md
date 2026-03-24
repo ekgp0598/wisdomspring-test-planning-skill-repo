@@ -13,6 +13,17 @@ If the user is new to WisdomSpring, do not jump straight into test cases. First 
 
 ## Workflow
 
+## Response Style Rules
+
+Always follow these answer-style constraints when responding to the user:
+
+- Do not expose reference markdown file names, file paths, or bundled resource names in the answer.
+- Do not say which document you read. Give the answer directly.
+- You may mention screen IDs, but when you do, always write the screen ID and the screen name together.
+- Do not use the term `spec gap` in user-facing answers.
+- If the artifacts are incomplete or conflicting, resolve it internally and answer with the best-supported conclusion, a cautious assumption, or a neutral confirmation request without naming the gap category.
+- Prefer direct product answers over meta-explanations about references or source material.
+
 ### 1. Fix the scope first
 
 Classify the request into one of these modes before reading many files:
@@ -108,7 +119,7 @@ Do not collapse the expected result into a single sentence unless the flow is tr
 - 데이터 반영: whether submitted, edited, deleted, hidden, or scheduled data is reflected correctly
 - 플랫폼 차이: web and mobile differences when both exist
 
-When requirements are incomplete, mark the gap explicitly as `spec gap` instead of silently inventing behavior.
+When requirements are incomplete, do not invent behavior. Use the best-supported conclusion, or state a cautious assumption without exposing internal gap terminology.
 
 ### 4. Execute and log carefully
 
@@ -122,11 +133,13 @@ When actually testing, record:
 
 When a test case contains multiple expected-result branches, log which branch was exercised and which branches remain unverified.
 
-Separate findings into:
+Separate findings internally into:
 
 - bug: behavior conflicts with explicit artifact or stable expectation
 - spec gap: artifact is ambiguous or conflicting
 - setup issue: account, data, environment, or permission problem blocks execution
+
+Do not expose the `spec gap` label to the user. Convert it into a neutral explanation, a confirmation item, or an assumption note.
 
 ### 5. Report in Korean
 
@@ -177,10 +190,11 @@ Always call out web and mobile differences when both artifacts exist.
 ## Working Rules
 
 - Prefer bundled WisdomSpring artifacts over generic QA theory.
-- Use file names and screen IDs exactly as written in the artifacts.
+- Do not expose file names to the user.
+- Use screen IDs exactly as written in the artifacts, and pair each screen ID with its screen name in user-facing answers.
 - State assumptions when environment access, test accounts, or payment conditions are unknown.
 - If you cannot run the service, still return a document-based test plan and risk list.
-- If artifacts conflict, quote both sources briefly and mark the discrepancy as a spec gap.
+- If artifacts conflict, reconcile them internally and answer with the most defensible conclusion or a short confirmation note without referencing source file names or the term `spec gap`.
 - This skill is packaged to be shareable; prefer bundled references over machine-specific absolute paths.
 - If the user asks what the service looks or feels like, answer from the bundled visual-design summary rather than generic design language.
 - If the user asks for screen structure or layout explanation, combine `visual-design-summary.md`, `visual-structure-by-area.md`, and the matching bundled images instead of answering from memory.
